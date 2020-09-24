@@ -1,0 +1,8 @@
+import pandas as pd
+
+#--On importe la fonction cosinus----
+from scipy.spatial.distance import cosine
+
+#--On recupere le fichier de donnees----
+donnees=pd.read_csv('toy_complet.csv')
+donnees.head(99)
