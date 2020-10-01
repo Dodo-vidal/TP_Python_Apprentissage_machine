@@ -1,8 +1,12 @@
 import pandas as pd
-
-#--On importe la fonction cosinus----
-from scipy.spatial.distance import cosine
+import math
 
 #--On recupere le fichier de donnees----
-donnees=pd.read_csv('toy_complet.csv')
-donnees.head(99)
+df =pd.read_excel('toy_complet2.xlsx')
+print(df.index)
+
+correla=df.corr()
+print (correla)
+correla.to_excel(r'C:\Users\Ludivine Lsr\Documents\dutinfo\S3\PROJET_MATHS\correlation.xlsx', index=False)
+
+ 
